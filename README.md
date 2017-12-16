@@ -6,13 +6,9 @@ Posted on March 19, 2007in Categories File system, GNU/Open source, Howto, Linux
 This is one of the key questions many new sys admin ask:
 
 
- 
-How do I audit file events such as read / write etc? How can I use audit to see who changed a file in Linux?
-
-The answer is to use 2.6 kernelâ€™s audit system. Modern Linux kernel (2.6.x) comes with auditd daemon. Itâ€™s responsible for writing audit records to the disk. During startup, the rules in /etc/audit.rules are read by this daemon. You can open /etc/audit.rules file and make changes such as setup audit file log location and other option. The default file is good enough to get started with auditd.
 
 In order to use audit facility you need to use following utilities
-=> auditctl – a command to assist controlling the kernelâ€™s audit system. You can get status, and add or delete rules into kernel audit system. Setting a watch on a file is accomplished using this command:
+=> auditctl – a command to assist controlling the kernel audit system. You can get status, and add or delete rules into kernel audit system. Setting a watch on a file is accomplished using this command:
 
 => ausearch – a command that can query the audit daemon logs based for events based on different search criteria.
 
